@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Stage One Task</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- JavaScript -->
+    <script defer src="./app.js"></script>
+
+    <!-- ----Poppins FOnt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!------- Cursive FOnts ------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!------- Font Awesome ------->
+    <script
+      src="https://kit.fontawesome.com/68a405a728.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header" id="home">
+        <div class="header-content">
+          <div class="left-header">
+            <div class="profile-image">
+              <img
+                src="./SlackDisplayPhoto.jpg"
+                alt="slack display photo of Obiajulu Ebuka"
+                class="displayPhoto"
+                data-testid="slackProfilePicture"
+              />
+            </div>
+          </div>
+          <div class="right-header">
+            <h1 class="name">
+              Hi, I'm
+              <span class="color-name" data-testid="fullName">Obiajulu Chukwuebuka,</span><br>a Web Developer.
+            </h1>
+            <h1 class="overlayText">Front-end basically</h1>
+            <p class="name-paragraph margin-top">
+              I am excited to join this year's HNG internship. Looking forward
+              to making good progress in my frontend development journey. This
+              portfolio outlines my 2 year goal plan as a frontend web
+              developer.
+            </p>
+            <div class="slack-details margin-top">
+              <p data-testid="slackDisplayName">Slack Name: Books</p>
+              <p data-testid="slackEmail">Slack Email: ebuka.info@yahoo.com</p>
+              <a href="https://x.com/EbukaObiajulu"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://github.com/ebukaobiajulu"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="day-time">
+              <div class="flex">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p class="current-day" data-testid="currentDay"></p>
+              </div>
+              <div class="flex">
+                <i class="fa-regular fa-clock"></i>
+                <p class="current-time" data-testid="currentTimeUTC"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="main-content">
+        <h2>Plan outline</h2>
+        <div class="goal-list margin-top">
+          <ul>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Learn and develop a strong understanding of a JavaScript
+                library. Since I already have a good understanding of the basics
+                of HTML, CSS and JavaScript, I would learn ReactJS and work to
+                be good at it.
+              </p>
+            </li>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Build as many projects as possible so I become comfortable with
+                React. Join online communities to contribute to solving coding
+                problems and challenges.
+              </p>
+            </li>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Become a HNG finalist. I know I will be stretched in HNG
+                internship and that was why I chose this internship
+              </p>
+            </li>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Get real world experiences. I would work on freelance projects
+                and join other internships, and also learn about web performance
+                optimization
+              </p>
+            </li>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Apply to as many jobs as possible. I want to get to somewhat of
+                a comfortable position in my understanding of React and other
+                web technologies before applying to jobs.
+              </p>
+            </li>
+            <li class="goal-list-items">
+              <i class="fa-solid fa-briefcase"></i>
+              <p>
+                Find a mentor, someone who would show me the ropes in the field.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <footer>
+        <div class="hng-links">
+          <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
+            >HNG Learn</a
+          >
+          <a
+            href="https://keyword.dog/"
+            target="_blank"
+            data-testid="keywordLink"
+            >Keyword</a
+          >
+          <a
+            href="https://scrapeanyweb.site/"
+            target="_blank"
+            data-testid="scrapeanywebLink"
+            >Scrape Any Website</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

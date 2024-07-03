@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  :root {
+    --cookie-font: "Cookie", cursive;
+    --dancing-script: "Dancing Script", cursive;
+    --poppins: "Poppins", sans-serif;
+  }
+  img {
+    /* height: auto; */
+    border-radius: 50%;
+  }
+  h2{
+      text-align: center;
+  }
+  .container {
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+  }
+  body {
+    background-color: #191d2b;
+    font-family: var(--poppins);
+    color: #fff;
+  }
+  
+  .header-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .color-name{
+      color: #60dd7f;
+  }
+  
+  .overlayText {
+      font-family: var(--dancing-script);
+      font-size: 3rem;
+      font-weight: 400;
+      color: #cccecf;
+      margin-top: -1.5rem;
+      /* padding-left: 3rem; */
+      /* position: absolute;
+        top: 30rem; */
+    }
+  .profile-image {
+    border-radius: 50%;
+    border: solid white 4px;
+    background-color: transparent;
+    margin-top: 5rem;
+  }
+  .margin-top{
+      margin-top: 2rem;
+  }
+  .day-time{
+      margin-top: 1rem;
+  }
+  .flex{
+      display: flex;align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.3rem;
+  }
+  /* Goals Section */
+  .main-content{
+      margin-top: 4rem;
+  }
+  .goal-list ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+  }
+  .goal-list-items{
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+  }
+  
+  /* Footer section */
+  .hng-links{
+      text-align: center;
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: column;
+  }
+  a{
+      color: white;   
+      margin-bottom: 0.5rem; 
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px){
+      .container{
+          width: 100%;
+      }
+      h1, .overlayText{
+          font-size: 1.8rem;
+      }
+      p{
+          font-size: 0.9rem;
+          line-height: 1.7;
+      }
+      .header-content{
+          flex-direction: column;
+      }
+      .goal-list ul{
+          grid-template-columns: 1fr;
+      }
+      .goal-list-items{
+          align-items: center;
+      }
+  }
